@@ -16,6 +16,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e977af675aed5004e8e415f951c9ac74, type: 2}
   - {fileID: 11400000, guid: d9dc32f79b5fa504e906a2b0c0c12931, type: 2}
   - {fileID: 11400000, guid: 8920170226fb10547ab42e327171fe1e, type: 2}
+  - {fileID: 11400000, guid: 8447913bc4cea7846a6951afb92bb913, type: 2}
+  - {fileID: 11400000, guid: 7d78390bbfa55f94daac10819b5056fb, type: 2}
   exactlyClothWarning: "\u0110\xE3 chu\u1EA9n b\u1ECB \u0111\u1EE7 trang b\u1ECB
     b\u1EA3o h\u1ED9."
   missingClothWarning: "Thi\u1EBFu trang ph\u1EE5c b\u1EA3o h\u1ED9!"
