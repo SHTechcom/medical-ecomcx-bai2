@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   database: {fileID: 11400000, guid: 27c88f1dd3ccdb347b50725a4deef456, type: 2}
-  preset: {fileID: 11400000, guid: c6788f17c998a4e46bc662fa62a377f9, type: 2}
+  preset: {fileID: 0}
   acceptMissing: 0
   acceptExtra: 0
   showLog: 0
@@ -643,6 +643,10 @@ PrefabInstance:
     - target: {fileID: 5574148497079946517, guid: 9bb33302eab49324c9317e9f3cafa906, type: 3}
       propertyPath: m_Name
       value: prefab_ui_avatar_checklist
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574148497079946517, guid: 9bb33302eab49324c9317e9f3cafa906, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5604569048059863172, guid: 9bb33302eab49324c9317e9f3cafa906, type: 3}
       propertyPath: m_SizeDelta.y

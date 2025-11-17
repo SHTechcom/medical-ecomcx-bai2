@@ -32,6 +32,14 @@ namespace _Main.Phan1.Bai1.StepSystem
 
         public bool IsStepCompleted() => _isStepCompleted;
 
+        public void CompletedStep()
+        {
+            _tween?.Kill();
+            delayToNextStep = 0;
+            Current = this;
+            EndStepAndGoToNextStep();
+        }
+
         public override void StartStep()
         {
             if (autoEnableWhenStartStep) gameObject.SetActive(true);

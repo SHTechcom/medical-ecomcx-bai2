@@ -15,3 +15,7 @@ MonoBehaviour:
   key: equipment_cloth_cloak
   equipmentName: "\xC1o cho\xE0ng v\xF4 khu\u1EA9n"
   type: 1
+  modal: {fileID: 8279999810472847614, guid: 0537be86ebd4af7429223ec0e39d7026, type: 3}
+  scaleOnUI: 40
+  rotate: {x: -90, y: 0, z: 0}
+  errorPos: {x: 0, y: 0, z: 0}

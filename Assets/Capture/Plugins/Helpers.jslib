@@ -7,4 +7,12 @@ mergeInto(LibraryManager.library, {
     {
         window.ShowScreenshot(UTF8ToString(dataUrl));
     },
+    GiamToc: function()
+    {
+        window.GiamToc();
+    },
+    TangToc: function()
+    {
+        window.TangToc();
+    },
 });

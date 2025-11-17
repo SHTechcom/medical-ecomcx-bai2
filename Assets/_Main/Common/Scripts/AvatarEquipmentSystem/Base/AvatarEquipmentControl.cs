@@ -42,13 +42,7 @@ namespace _Main.Common.Scripts.Avatar
         {
             ResetAvatarEquipmentSystem();
             AvatarEquipmentSystem.ShowLog = showLog;
-            StartChooseFlow();
-        }
-
-        public void StartChooseFlow()
-        {
-            if (startWithCloth) ShowClothChooseUI();
-            else ShowToolAndMedicineChooseUI();
+            ShowClothChooseUI();
         }
 
         public void ResetAvatarEquipmentSystem()
@@ -68,20 +62,6 @@ namespace _Main.Common.Scripts.Avatar
 
             gameObject.SetActive(true);
             SetupAndShowUI(EquipmentType.Cloth);
-        }
-
-        public void ShowToolAndMedicineChooseUI()
-        {
-            _currentEquipmentTypeChoose = EquipmentType.ToolAndMedicine;
-
-            if (AvatarEquipmentSystem.CheckContainPreset(EquipmentType.ToolAndMedicine, preset))
-            {
-                CompleteChooseEquipmentPhase();
-                return;
-            }
-
-            gameObject.SetActive(true);
-            SetupAndShowUI(EquipmentType.ToolAndMedicine);
         }
 
         public void HideChooseEquipmentUI()
@@ -157,13 +137,8 @@ namespace _Main.Common.Scripts.Avatar
             switch (_currentEquipmentTypeChoose)
             {
                 case EquipmentType.Cloth:
-                    HandleEquipmentItems(EquipmentType.Cloth, startWithCloth ? ShowToolAndMedicineChooseUI : CompleteChooseEquipmentPhase,
+                    HandleEquipmentItems(EquipmentType.Cloth, CompleteChooseEquipmentPhase,
                         OnMissingCloth, OnExtraCloth);
-                    break;
-
-                case EquipmentType.ToolAndMedicine:
-                    HandleEquipmentItems(EquipmentType.ToolAndMedicine, startWithCloth ? CompleteChooseEquipmentPhase : ShowClothChooseUI,
-                        OnMissingToolsAndMedicines, OnExtraToolsAndMedicines);
                     break;
             }
         }
@@ -173,6 +148,7 @@ namespace _Main.Common.Scripts.Avatar
             if (acceptMissing && acceptExtra) onContinue?.Invoke();
             else if (AvatarEquipmentSystem.CheckContainPreset(type, preset))
             {
+                Debug.Log("Completed");
                 onContinue?.Invoke();
                 return;
             }
