@@ -42,6 +42,11 @@ namespace _Main.Phan1.Bai1.StepSystem
 
         public override void StartStep()
         {
+            if(gameObject == null)
+            {
+                CompletedStep();
+                return;
+            }
             if (autoEnableWhenStartStep) gameObject.SetActive(true);
             base.StartStep();
             Current = this;

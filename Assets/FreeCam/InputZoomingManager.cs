@@ -7,6 +7,7 @@ public class InputZoomingManager : MonoBehaviour
     Vector3 lastPos;
     Quaternion lastRot;
 
+    public GameObject canvas;
     public Camera _cam;
     [SerializeField] Transform _cameraTrans;
     [SerializeField] Button backButton;
@@ -68,6 +69,18 @@ public class InputZoomingManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void Show()
+    {
+        canvas.SetActive(true);
+    }
+
+    public void Hide()
+    {
+        canvas.SetActive(false);
+        OnClickBackButton();
+        StopMode();
     }
 
     private void OnClickBackButton()

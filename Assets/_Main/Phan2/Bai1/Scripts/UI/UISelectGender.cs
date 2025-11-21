@@ -1,24 +1,21 @@
 using System;
-using UnityEngine;
+using Bai11;
 using UnityEngine.UI;
 
-namespace Bai11
+public class UISelectGender : BaseView
 {
-    public class UISelectGender : BaseView
+    public Button select1Button;
+    public Button select2Button;
+
+    public void OnClickSelect1(Action callback)
     {
-        public Button selectMaleButton;
-        public Button selectFemaleButton;
+        select1Button.onClick.RemoveAllListeners();
+        select1Button.onClick.AddListener(() => { callback?.Invoke(); });
+    }
 
-        public void OnClickSelectMale(Action callback)
-        {
-            selectMaleButton.onClick.RemoveAllListeners();
-            selectMaleButton.onClick.AddListener(() => { callback?.Invoke(); });
-        }
-
-        public void OnClickSelectFemale(Action callback)
-        {
-            selectFemaleButton.onClick.RemoveAllListeners();
-            selectFemaleButton.onClick.AddListener(() => { callback?.Invoke(); });
-        }
+    public void OnClickSelect2(Action callback)
+    {
+        select2Button.onClick.RemoveAllListeners();
+        select2Button.onClick.AddListener(() => { callback?.Invoke(); });
     }
 }

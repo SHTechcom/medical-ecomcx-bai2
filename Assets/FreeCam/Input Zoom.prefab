@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8660c0d91563714a98ac46771cbfb20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 4434770641721244351}
   _cam: {fileID: 8237143715006727495}
   _cameraTrans: {fileID: 6079713341063855466}
   backButton: {fileID: 4963115228489014005}

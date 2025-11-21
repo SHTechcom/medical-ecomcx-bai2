@@ -22,8 +22,8 @@ namespace Bai11
 
         private void Start()
         {
-            UISelectGender.OnClickSelectMale(OnSelectMale);
-            UISelectGender.OnClickSelectMale(OnSelecteFemale);
+            UISelectGender.OnClickSelect1(OnSelectMale);
+            UISelectGender.OnClickSelect1(OnSelecteFemale);
         }
 
         private void OnSelectMale()
