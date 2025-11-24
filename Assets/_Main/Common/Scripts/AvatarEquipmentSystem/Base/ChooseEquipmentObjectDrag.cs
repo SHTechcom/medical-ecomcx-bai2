@@ -21,7 +21,7 @@ namespace _Main.Common.Scripts.Avatar
             modalParent.localScale = equipment.scaleOnUI * Vector3.one;
             modalParent.localEulerAngles = equipment.rotate;
             modalSpawn.transform.position -= equipment.errorPos;
-            fitBoxColliderMeshes.GetFitBoxCollider(0);
+            fitBoxColliderMeshes.GetFitBoxCollider(2);
 
             MeshRenderer[] renderers = GetComponentsInChildren<MeshRenderer>();
             foreach (var r in renderers)

@@ -22,6 +22,11 @@ namespace _Main.Common.Scripts.Avatar
 
         private GameObject _dragObj;
         private GameObject _dragPreviewObj;
+
+        public void SetDropArea(Collider col)
+        {
+            _dropAreaCollider = col;
+        }
         private Collider _previewCollider;
         private Collider _dropAreaCollider;
 
@@ -109,8 +114,7 @@ namespace _Main.Common.Scripts.Avatar
             switch (type)
             {
                 case EquipmentType.Cloth:
-                    _dropAreaCollider = avatarCollider;
-                    avatarCollider.gameObject.SetActive(true);
+                    //avatarCollider.gameObject.SetActive(true);
                     trayCollider.gameObject.SetActive(false);
                     break;
                 case EquipmentType.ToolAndMedicine:
@@ -217,28 +221,41 @@ namespace _Main.Common.Scripts.Avatar
             }
         }
 
+        public void SetCollider(Collider col)
+        {
+            _dropAreaCollider = col;
+        }
+
         private bool CanDrop(Collider obj, Collider tray)
         {
-            if (!IsInsideXY(obj, tray)) return false;
+            // if (!IsInsideXY(obj, tray)) return false;
+            //
+            // int hitCount = Physics.OverlapBoxNonAlloc(
+            //     obj.bounds.center,
+            //     obj.bounds.extents,
+            //     _overlapResults,
+            //     obj.transform.rotation,
+            //     dragLayer
+            // );
+            //
+            // for (int i = 0; i < hitCount; i++)
+            // {
+            //     var hit = _overlapResults[i];
+            //     if (hit != obj && hit != tray)
+            //     {
+            //         if (IsOverlapXY(obj, hit)) return false;
+            //     }
+            // }
+            //
+            // return true;
+            Vector3 dir;
+            float dist;
 
-            int hitCount = Physics.OverlapBoxNonAlloc(
-                obj.bounds.center,
-                obj.bounds.extents,
-                _overlapResults,
-                obj.transform.rotation,
-                dragLayer
+            return Physics.ComputePenetration(
+                obj, obj.transform.position, obj.transform.rotation,
+                tray, tray.transform.position, tray.transform.rotation,
+                out dir, out dist
             );
-
-            for (int i = 0; i < hitCount; i++)
-            {
-                var hit = _overlapResults[i];
-                if (hit != obj && hit != tray)
-                {
-                    if (IsOverlapXY(obj, hit)) return false;
-                }
-            }
-
-            return true;
         }
 
         private void Clean()

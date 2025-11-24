@@ -64,6 +64,7 @@ namespace UDA.Audio
             SetVolumeAll(vollum);
             TurnSound(isMute);
             UISetting.volumeSlider.value = vollum;
+            UISetting.SetIconSound(isMute);
         }
     }
 }

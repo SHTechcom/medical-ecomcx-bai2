@@ -24,6 +24,7 @@ namespace _Main.Common.Scripts.Avatar
         [SerializeField] private ChooseEquipmentObjectDrag objectPrefab;
 
         [SerializeField] private UnityEvent onCompleteChooseEquipment;
+        [SerializeField] private UnityEvent onCompleteWearClothes;
 
         public Action<int> OnMissingCloth;
         public Action<int> OnMissingToolsAndMedicines;
@@ -38,11 +39,32 @@ namespace _Main.Common.Scripts.Avatar
 
         public Transform GetSpawnTransform() => spawnTransform;
 
+        public List<ColliderPerfect> colliderPerfects = new();
+
         private void Start()
         {
             ResetAvatarEquipmentSystem();
             AvatarEquipmentSystem.ShowLog = showLog;
-            ShowClothChooseUI();
+            StartChooseFlow();
+            foreach (var col in colliderPerfects)
+            {
+                col.collider.enabled = false;
+            }
+        }
+
+        public Collider GetCollider(AvatarEquipment equipment)
+        {
+            foreach (var col in colliderPerfects)
+            {
+                col.collider.enabled = false;
+            }
+            return colliderPerfects.Find(x => x.equipment == equipment).collider;
+        }
+
+        public void StartChooseFlow()
+        {
+            if (startWithCloth) ShowClothChooseUI();
+            else ShowToolAndMedicineChooseUI();
         }
 
         public void ResetAvatarEquipmentSystem()
@@ -62,6 +84,20 @@ namespace _Main.Common.Scripts.Avatar
 
             gameObject.SetActive(true);
             SetupAndShowUI(EquipmentType.Cloth);
+        }
+
+        public void ShowToolAndMedicineChooseUI()
+        {
+            _currentEquipmentTypeChoose = EquipmentType.ToolAndMedicine;
+
+            if (AvatarEquipmentSystem.CheckContainPreset(EquipmentType.ToolAndMedicine, preset))
+            {
+                CompleteChooseEquipmentPhase();
+                return;
+            }
+
+            gameObject.SetActive(true);
+            SetupAndShowUI(EquipmentType.ToolAndMedicine);
         }
 
         public void HideChooseEquipmentUI()
@@ -96,6 +132,10 @@ namespace _Main.Common.Scripts.Avatar
             var item = Instantiate(objectPrefab, spawnTransform.parent, false);
             item.transform.position = spawnTransform.position;
             item.Setup(equipment);
+            var col = GetCollider(equipment);
+            if (col != null) col.enabled = true;
+            chooseEquipmentDragUI.SetDropArea(col);
+            
 
             CurrentObjectEquipment = equipment;
 
@@ -137,8 +177,13 @@ namespace _Main.Common.Scripts.Avatar
             switch (_currentEquipmentTypeChoose)
             {
                 case EquipmentType.Cloth:
-                    HandleEquipmentItems(EquipmentType.Cloth, CompleteChooseEquipmentPhase,
+                    HandleEquipmentItems(EquipmentType.Cloth, startWithCloth ? ShowToolAndMedicineChooseUI : CompleteChooseEquipmentPhase,
                         OnMissingCloth, OnExtraCloth);
+                    break;
+
+                case EquipmentType.ToolAndMedicine:
+                    HandleEquipmentItems(EquipmentType.ToolAndMedicine, startWithCloth ? CompleteChooseEquipmentPhase : ShowClothChooseUI,
+                        OnMissingToolsAndMedicines, OnExtraToolsAndMedicines);
                     break;
             }
         }
@@ -148,7 +193,6 @@ namespace _Main.Common.Scripts.Avatar
             if (acceptMissing && acceptExtra) onContinue?.Invoke();
             else if (AvatarEquipmentSystem.CheckContainPreset(type, preset))
             {
-                Debug.Log("Completed");
                 onContinue?.Invoke();
                 return;
             }
@@ -173,5 +217,12 @@ namespace _Main.Common.Scripts.Avatar
             onCompleteChooseEquipment?.Invoke();
             HideChooseEquipmentUI();
         }
+    }
+
+    [Serializable]
+    public class ColliderPerfect
+    {
+        public AvatarEquipment equipment;
+        public Collider collider;
     }
 }

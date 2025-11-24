@@ -126,6 +126,8 @@ namespace _Main.Common.Scripts.Avatar.UI
 
                 _ => string.Empty
             };
+            
+            if(missing.Count == 0 && extra.Count == 0) continueButton.gameObject.SetActive(true);
 
             checkListNote.text = message;
         }

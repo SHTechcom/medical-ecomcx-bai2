@@ -48,7 +48,7 @@ namespace _Main.Common.Scripts.Avatar.UI
             if (_avatarEquipment == null) return;
 
             itemName.text = _avatarEquipment.equipmentName;
-            checkImage.color = IsEquipped ? Color.green : Color.red;
+            checkImage.color = IsEquipped ? Color.green : Color.white;
         }
 
         public void OnEquip(AvatarEquipment equip)

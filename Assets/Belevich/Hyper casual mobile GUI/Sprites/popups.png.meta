@@ -139,7 +139,7 @@ TextureImporter:
         height: 716
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 150, y: 150, z: 150, w: 150}
+      border: {x: 689, y: 358, z: 689, w: 358}
       customData: 
       outline: []
       physicsShape: []
@@ -161,7 +161,7 @@ TextureImporter:
         height: 666
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 150, y: 150, z: 150, w: 150}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -315,7 +315,7 @@ TextureImporter:
         height: 1379
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 160, y: 160, z: 160, w: 160}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -337,7 +337,7 @@ TextureImporter:
         height: 793
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 150, y: 150, z: 150, w: 150}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -353,13 +353,13 @@ TextureImporter:
       name: popups_13
       rect:
         serializedVersion: 2
-        x: 1746
+        x: 1740
         y: 474
         width: 666
         height: 1329
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 150, y: 150, z: 150, w: 150}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -381,7 +381,7 @@ TextureImporter:
         height: 744
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 150, y: 150, z: 150, w: 150}
+      border: {x: 333, y: 372, z: 333, w: 372}
       customData: 
       outline: []
       physicsShape: []

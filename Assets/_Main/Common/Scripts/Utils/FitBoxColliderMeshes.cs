@@ -10,42 +10,64 @@ public class FitBoxColliderMeshes : MonoBehaviour
     [ContextMenu("GetFitBoxCollider")]
     public void GetFitBoxCollider()
     {
-        BoxCollider box = GetComponent<BoxCollider>();
-
-        MeshRenderer[] renderers = GetComponentsInChildren<MeshRenderer>();
-
-        if (renderers.Length == 0) return;
-
-        Bounds combinedBounds = renderers[0].bounds;
-
-        for (int i = 1; i < renderers.Length; i++)
-        {
-            combinedBounds.Encapsulate(renderers[i].bounds);
-        }
-
-        Vector3 localCenter = transform.InverseTransformPoint(combinedBounds.center);
-        Vector3 localSize = transform.InverseTransformVector(combinedBounds.size);
-
-        box.center = localCenter;
-        box.size = localSize + outsideAdd * Vector3.one;
+        ApplyFit(outsideAdd);
     }
-    
+
     [Sirenix.OdinInspector.Button]
     [ContextMenu("GetFitBoxCollider")]
     public void GetFitBoxCollider(float outside)
     {
+        ApplyFit(outside);
+    }
+
+    void ApplyFit(float outside)
+    {
         BoxCollider box = GetComponent<BoxCollider>();
 
-        MeshRenderer[] renderers = GetComponentsInChildren<MeshRenderer>();
+        MeshRenderer[] meshRenderers = GetComponentsInChildren<MeshRenderer>();
+        SkinnedMeshRenderer[] skinnedRenderers = GetComponentsInChildren<SkinnedMeshRenderer>();
 
-        if (renderers.Length == 0) return;
+        if (meshRenderers.Length == 0 && skinnedRenderers.Length == 0) return;
 
-        Bounds combinedBounds = renderers[0].bounds;
+        bool hasBounds = false;
+        Bounds combinedBounds = new Bounds();
 
-        for (int i = 1; i < renderers.Length; i++)
+        foreach (var r in meshRenderers)
         {
-            combinedBounds.Encapsulate(renderers[i].bounds);
+            if (!hasBounds)
+            {
+                combinedBounds = r.bounds;
+                hasBounds = true;
+            }
+            else
+            {
+                combinedBounds.Encapsulate(r.bounds);
+            }
         }
+
+        foreach (var sr in skinnedRenderers)
+        {
+            if (sr.sharedMesh == null) continue;
+
+            Bounds localB = sr.sharedMesh.bounds;
+
+            Vector3 worldCenter = sr.transform.TransformPoint(localB.center);
+            Vector3 worldSize = sr.transform.TransformVector(localB.size);
+
+            Bounds worldB = new Bounds(worldCenter, worldSize);
+
+            if (!hasBounds)
+            {
+                combinedBounds = worldB;
+                hasBounds = true;
+            }
+            else
+            {
+                combinedBounds.Encapsulate(worldB);
+            }
+        }
+
+        if (!hasBounds) return;
 
         Vector3 localCenter = transform.InverseTransformPoint(combinedBounds.center);
         Vector3 localSize = transform.InverseTransformVector(combinedBounds.size);
@@ -59,12 +81,8 @@ public class FitBoxColliderMeshes : MonoBehaviour
     public void Remove()
     {
         if (Application.isPlaying)
-        {
             Destroy(this);
-        }
         else
-        {
             DestroyImmediate(this);
-        }
     }
 }
