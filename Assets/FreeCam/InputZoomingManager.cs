@@ -1,4 +1,7 @@
-﻿using DG.Tweening;
+﻿using System.Collections.Generic;
+using DG.Tweening;
+using Sirenix.Utilities;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -71,6 +74,8 @@ public class InputZoomingManager : MonoBehaviour
         }
     }
 
+    private List<Canvas> openedCanvasCached = new List<Canvas>();
+
     public void Show()
     {
         canvas.SetActive(true);
@@ -97,6 +102,16 @@ public class InputZoomingManager : MonoBehaviour
 
     public void StartFreeMode()
     {
+        var canvases = FindObjectsOfType<Canvas>(true);
+        foreach (var c in canvases)
+        {
+            if (c.gameObject.activeSelf && c.gameObject.GetInstanceID() != canvas.gameObject.GetInstanceID())
+            {
+                openedCanvasCached.Add(c);
+            }
+            c.gameObject.SetActive(false);
+        }
+        canvas.gameObject.SetActive(true);
         _cameraTrans.gameObject.SetActive(true);
         freeBtn.gameObject.SetActive(false);
         fixxedBtn.gameObject.SetActive(true);
@@ -104,6 +119,8 @@ public class InputZoomingManager : MonoBehaviour
 
     public void StopMode()
     {
+        openedCanvasCached.ForEach(i => i.gameObject.SetActive(true));
+        openedCanvasCached.Clear();
         _cameraTrans.gameObject.SetActive(false);
         freeBtn.gameObject.SetActive(true);
         fixxedBtn.gameObject.SetActive(false);

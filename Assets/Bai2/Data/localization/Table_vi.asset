@@ -360,6 +360,10 @@ MonoBehaviour:
     m_Localized: ...
     m_Metadata:
       m_Items: []
+  - m_Id: 125303522512896
+    m_Localized: "Ng\xE0y sinh"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

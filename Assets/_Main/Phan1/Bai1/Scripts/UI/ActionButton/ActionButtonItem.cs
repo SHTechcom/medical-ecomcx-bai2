@@ -1,6 +1,7 @@
 ﻿using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 namespace _Main.Phan1.Bai1.Scripts.UI
@@ -9,13 +10,18 @@ namespace _Main.Phan1.Bai1.Scripts.UI
     {
         [SerializeField] private TMP_Text label;
         [SerializeField] private Button btn;
-
+        string tableName = "Table";
         private Func<bool> _allow;
         private Action _execute;
 
         public void Setup(string txt, Func<bool> allow, Action execute)
         {
             label.text = txt;
+            var localizedContent = new LocalizedString(tableName, txt);
+            localizedContent.StringChanged += value =>
+            {
+                label.text = value;
+            };
             _allow = allow;
             _execute = execute;
 
