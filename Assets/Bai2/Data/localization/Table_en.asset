@@ -1,0 +1,348 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Table_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 3c00943ebf41ed74eafb42179387f630, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 23831171072
+    m_Localized: 'Costume: Full shirt, hat, mask, stethoscope'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 123542360064
+    m_Localized: Check medical records, ensure correct patient, correct medical orders.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 151140880384
+    m_Localized: Hello. I am nurse Nguyen Van A. Nice to meet you. Today, I will
+      change your bandage and clean your wound. Are you ready?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178932338688
+    m_Localized: Soak gauze in NaCl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 205939462144
+    m_Localized: 'Performed in the operating room or patient room.
+
+      Requirements:
+      Must be clean, airy, well-lit and convenient for periodic sterilization'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234800467968
+    m_Localized: ND "pours" the solution (NaCl, Betadin) into 2 nickel bowls.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 266823979008
+    m_Localized: Clean hands before handling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 295894700032
+    m_Localized: After removing the bandage, the nurse assesses and evaluates the
+      wound. This is to classify the wound.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 339528044544
+    m_Localized: Help the patient to a favorable position, exposing the wound.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400991375360
+    m_Localized: The nurse puts on clean gloves and places a pillow under the wound.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 426803122176
+    m_Localized: Clean hands before handling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 472848191488
+    m_Localized: 'Remove the old bandage: Remove slowly and gently.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 508982120448
+    m_Localized: 'Continue removing the old bandage: Remove slowly and gently.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542519775232
+    m_Localized: 'Note: If fluid or blood sticks to the bandage, soak it in wound
+      cleaning solution (0.9% NaCl) to moisten it before removing to avoid pain and
+      bleeding.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 566494416896
+    m_Localized: 'Sterile equipment: Tool box (nickel bowl, 2 Kocher forceps, 2 dissecting
+      forceps, 1 scissors), gauze, cotton swab
+
+      Clean equipment (on trolley):
+      Rectangular tray, scissors, adhesive tape, 2 pairs of gloves (1 clean, 1 sterile),
+      cleaning solution (0.9% NaCl), antiseptic solution (Betadin).
+
+      Other
+      equipment: Disinfectant solution basin, plastic/mat, medical waste bucket,
+      sharps container, quick hand sanitizer bottle.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 594940186624
+    m_Localized: 'Use gauze soaked in 0.9% NaCl solution.
+
+      Wash from the edge
+      of the wound to the outside of the healthy skin and discard.
+
+      Wash from
+      the center of the wound to the edge of the wound and discard.
+
+      Note:
+      Wash by gently patting, do not rub vigorously.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 623918632960
+    m_Localized: Greet, introduce name and title. Inform and explain to the patient
+      (and family) about the upcoming procedure to encourage and help them cooperate.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 644969844736
+    m_Localized: Pick up the old gauze on the wound and put it in the dirty laundry
+      bag.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 688280227840
+    m_Localized: 'Clean up tools: Arrange neatly, classify waste (tools in disinfectant
+      basin, waste in designated bucket).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 715283156992
+    m_Localized: Hello. I am nurse Nguyen Van A. Nice to meet you. Today, I will
+      change your bandage and clean your wound. Are you ready?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 755837882368
+    m_Localized: 'The nurse removes the old gloves, pours the solution (0.9% NaCl
+      and Betadin) into the nickel bowl. (Note: Do not let the tip of the solution
+      bottle touch the nickel bowl). The nurse disinfects her hands, puts on new
+      gloves (sterile).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 796220641280
+    m_Localized: Patient instructions...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825496883200
+    m_Localized: Wash the patient's wound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 855737815040
+    m_Localized: Select medical equipment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 885429293056
+    m_Localized: Wound assessment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 915385012224
+    m_Localized: Select room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 943629455360
+    m_Localized: Case
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963187494912
+    m_Localized: 'Reason for admission:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 990643408896
+    m_Localized: 'History of allergies:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1028425699328
+    m_Localized: 'Current status:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1055130832896
+    m_Localized: Doctor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1125725163520
+    m_Localized: 'Full name (printed):'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1164950294528
+    m_Localized: 'Gender:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1227860660224
+    m_Localized: 'Residential address:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1259129196544
+    m_Localized: 'Health insurance card number:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1292557799424
+    m_Localized: 'CCCD:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1313273466880
+    m_Localized: 'Summary of the disease process and clinical course (Onset characteristics,
+      clinical symptoms, disease course...):'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1344063852544
+    m_Localized: 'Age:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1385717485568
+    m_Localized: 'Nation:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1421939494912
+    m_Localized: 'Date/Time of Execution:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1450221686784
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529296900096
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1549639274496
+    m_Localized: Surgical room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1588822462464
+    m_Localized: Sick room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1670259068928
+    m_Localized: Done
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1701162700800
+    m_Localized: Voice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1739762880512
+    m_Localized: Bloody bandage and glue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1782142128128
+    m_Localized: Change bandages regularly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1808620769280
+    m_Localized: Remove the bandage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1830389207040
+    m_Localized: no pus or discharge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1869060689920
+    m_Localized: in the process of forming new skin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1929982955520
+    m_Localized: no swelling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1956138635264
+    m_Localized: Check List
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1987893710848
+    m_Localized: medical records
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2005115523072
+    m_Localized: I. Administration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2034651811840
+    m_Localized: I. Summary of treatment process
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2233092722688
+    m_Localized: Greetings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296544153600
+    m_Localized: Communication and encouragement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2316081221632
+    m_Localized: 6-step hand washing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2430447308800
+    m_Localized: Advice
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2482410541056
+    m_Localized: Place pillows
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2523976093696
+    m_Localized: Place the trash can
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2587222003712
+    m_Localized: Hand sanitizer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2670520881152
+    m_Localized: Throw away dirty tools
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2781187592192
+    m_Localized: Pour NaCl solution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2800749826048
+    m_Localized: Pour Betadin solution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2878394781696
+    m_Localized: Add gauze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2920304267264
+    m_Localized: Dip a bandage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2944694145024
+    m_Localized: Sponge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3004370702336
+    m_Localized: New bandage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3073027264512
+    m_Localized: Clean up tools
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3110348181504
+    m_Localized: Final cleaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3146763128832
+    m_Localized: End
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

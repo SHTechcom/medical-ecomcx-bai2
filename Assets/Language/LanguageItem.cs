@@ -16,6 +16,17 @@ public struct Language
 public class LanguageItem : MonoBehaviour
 {
     public TMP_Text txt;
+    public TMP_Text Txt
+    {
+        get
+        {
+            if(txt == null)
+            {
+                txt = GetComponent<TMP_Text>();
+            }
+            return txt;
+        }
+    }
     public LanguageType currentType;
     public List<Language> languages = new List<Language>();
 
@@ -31,7 +42,7 @@ public class LanguageItem : MonoBehaviour
         {
             if (languages[i].type == currentType)
             {
-                txt.text = languages[i].content;
+                Txt.text = languages[i].content;
                 return;
             }
         }

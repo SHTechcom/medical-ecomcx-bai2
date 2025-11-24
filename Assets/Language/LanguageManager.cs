@@ -1,26 +1,40 @@
+﻿using System.Collections;
 using Frank;
 using Sirenix.Utilities;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 
 public class LanguageManager : Singleton<LanguageManager>
 {
-    public LanguageType currentType;
+    private UISetting UISetting => GameViewManager.Instance.GetView<UISetting>();
 
-    public void AutoChange()
+    private IEnumerator Start()
     {
-        int count = System.Enum.GetValues(typeof(Language)).Length;
-        currentType++;
-        if((int)currentType > count)
-        {
-            currentType = 0;
-        }
-        ChangeLanguage(currentType);
+        yield return LocalizationSettings.InitializationOperation;
+        SetLocale(1);
+        UISetting.SetIconLang(1);
+        UISetting.OnClickedLang(ChangeLanguage);
     }
 
-    public void ChangeLanguage(LanguageType type)
+    private void ChangeLanguage()
     {
-        currentType = type;
-        var items = FindObjectsOfType<LanguageItem>(true);
-        items.ForEach(i => i.Change(currentType));
+        // 🔹 Nếu đang là tiếng Anh -> chuyển sang tiếng Việt
+        if (LocalizationSettings.SelectedLocale.Identifier.Code == "en")
+        {
+            SetLocale(1);
+            UISetting.SetIconLang(1);
+        }
+        // 🔹 Ngược lại (đang là tiếng Việt) -> chuyển sang tiếng Anh
+        else
+        {
+            SetLocale(0);
+            UISetting.SetIconLang(0);
+        }
+        Debug.Log("Current Locale: " + LocalizationSettings.SelectedLocale.Identifier.Code);
+    }
+
+    public void SetLocale(int index)
+    {
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
     }
 }

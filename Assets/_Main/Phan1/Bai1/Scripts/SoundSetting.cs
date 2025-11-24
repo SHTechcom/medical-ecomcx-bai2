@@ -9,20 +9,15 @@ public class SoundSetting : Singleton<SoundSetting>
 {
     public Slider slider;
     public Button languageBtn;
+    public Sprite[] iconFlags;
 
     private void Start()
     {
         slider.onValueChanged.AddListener(ChangeVollum);
-        languageBtn.onClick.AddListener(ChangeLeaguage);
-    }
-
-    private void ChangeLeaguage()
-    {
-        throw new NotImplementedException();
     }
 
     private void ChangeVollum(float arg0)
     {
-        FindAudioSource.Instance.SetVolumeAll(arg0);
+        AudioManager.Instance.SetVolumeAll(arg0);
     }
 }
