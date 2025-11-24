@@ -122233,7 +122233,19 @@ MonoBehaviour:
   conditionCount: 1
   onStepStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1460190}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onStepEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -470710,6 +470722,30 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 1076.0906
       objectReference: {fileID: 0}
+    - target: {fileID: 4123319678481299579, guid: 2b70c9bdd8bd319409ed551ca4d39bc8, type: 3}
+      propertyPath: maxPosition.x
+      value: 2.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123319678481299579, guid: 2b70c9bdd8bd319409ed551ca4d39bc8, type: 3}
+      propertyPath: maxPosition.y
+      value: 2.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123319678481299579, guid: 2b70c9bdd8bd319409ed551ca4d39bc8, type: 3}
+      propertyPath: maxPosition.z
+      value: 2.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123319678481299579, guid: 2b70c9bdd8bd319409ed551ca4d39bc8, type: 3}
+      propertyPath: minPosition.x
+      value: -2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123319678481299579, guid: 2b70c9bdd8bd319409ed551ca4d39bc8, type: 3}
+      propertyPath: minPosition.y
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123319678481299579, guid: 2b70c9bdd8bd319409ed551ca4d39bc8, type: 3}
+      propertyPath: minPosition.z
+      value: -2.42
+      objectReference: {fileID: 0}
     - target: {fileID: 4151497614748034003, guid: 2b70c9bdd8bd319409ed551ca4d39bc8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -470753,6 +470789,10 @@ PrefabInstance:
     - target: {fileID: 4434770641721244351, guid: 2b70c9bdd8bd319409ed551ca4d39bc8, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209984187570017818, guid: 2b70c9bdd8bd319409ed551ca4d39bc8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

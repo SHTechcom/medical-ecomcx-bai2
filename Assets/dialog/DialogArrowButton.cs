@@ -36,7 +36,7 @@ public class DialogArrowButton : MonoBehaviour
             content.DOAnchorPosY(0, 0.5f).OnComplete(() =>
             {
                 isAniming = false;
-                icon.localScale = new Vector3(1, -1, 1);
+                icon.localScale = new Vector3(1, 1, 1);
             });
         }
     }
