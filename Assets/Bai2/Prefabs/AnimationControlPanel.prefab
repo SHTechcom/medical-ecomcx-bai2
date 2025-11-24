@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1683000198188727299
 RectTransform:
   m_ObjectHideFlags: 0
@@ -214,7 +214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7728649095695529982
 RectTransform:
   m_ObjectHideFlags: 0
@@ -376,7 +376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92726b4da4cdea549b976d1e49755f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  caller: {fileID: 0}
+  animatorCaller: {fileID: 0}
   playBtn: {fileID: 8877795663532986040}
   tangtocBtn: {fileID: 1530868141455121347}
   giamtocBtn: {fileID: 7791530687978367216}
@@ -475,7 +476,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7197547644985275567
 RectTransform:
   m_ObjectHideFlags: 0
