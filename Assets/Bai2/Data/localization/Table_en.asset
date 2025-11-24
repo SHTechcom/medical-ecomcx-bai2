@@ -351,6 +351,30 @@ MonoBehaviour:
     m_Localized: Date of birth
     m_Metadata:
       m_Items: []
+  - m_Id: 183841867354112
+    m_Localized: Betadin Solution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193108926189568
+    m_Localized: Cap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193130178727936
+    m_Localized: Cloak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193276576714752
+    m_Localized: Glove
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193308373733376
+    m_Localized: Stethoscope and Name Tag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 193364426412032
+    m_Localized: Mask
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

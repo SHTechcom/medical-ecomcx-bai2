@@ -1,6 +1,7 @@
 ﻿using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 namespace _Main.Common.Scripts.Avatar.UI
@@ -48,6 +49,11 @@ namespace _Main.Common.Scripts.Avatar.UI
             if (_avatarEquipment == null) return;
 
             itemName.text = _avatarEquipment.equipmentName;
+            var localizedContent = new LocalizedString("Table", _avatarEquipment.equipmentName);
+            localizedContent.StringChanged += value =>
+            {
+                itemName.text = value;
+            };
             checkImage.color = IsEquipped ? Color.green : Color.white;
         }
 

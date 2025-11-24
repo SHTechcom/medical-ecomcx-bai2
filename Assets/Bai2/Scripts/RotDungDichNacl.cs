@@ -10,13 +10,10 @@ public class RotDungDichNacl : MonoBehaviour
     public GameObject chaiNaCLDD;
     public GameObject chaiCaCLDDSetupw;
     [Header("========")]
-    public GameObject chaiBetadin;
-    public GameObject chaiBetadinSetup;
-    [Header("========")]
     public Bat batNacl;
-    public Bat batBatadin;
     [Header("========")]
     public UnityEvent OnSkipEvent;
+    public UnityEvent OnCompleted;
     [Header("========")]
     public GameObject tay;
     public GameObject chaiNaclInHand;
@@ -30,6 +27,7 @@ public class RotDungDichNacl : MonoBehaviour
 
     private IEnumerator Anim2()
     {
+        tay.gameObject.SetActive(true);
         var tween = tay.transform.DOLocalMoveX(1, 1);
         _tweens.Add(tween);
         yield return new WaitForSeconds(1);
@@ -41,25 +39,11 @@ public class RotDungDichNacl : MonoBehaviour
         _tweens.Add(tween1);
         var tween2 = tay.transform.DORotate(target.eulerAngles, 1);
         _tweens.Add(tween2);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.5f);
         batNacl.ShowDD(true);
-    }
-
-    private IEnumerator Anim()
-    {
-        chaiNaCLDD.SetActive(false);
-        chaiCaCLDDSetupw.SetActive(true);
-        yield return new WaitForSeconds(2);
-        batNacl.ShowDD(true);
-        chaiCaCLDDSetupw.SetActive(false);
-        chaiNaCLDD.SetActive(true);
-        yield return new WaitForSeconds(1);
-        chaiBetadin.SetActive(false);
-        chaiBetadinSetup.SetActive(true);
-        yield return new WaitForSeconds(2);
-        batBatadin.ShowDD(true);
-        chaiBetadin.SetActive(true);
-        chaiBetadinSetup.SetActive(false);
+        chaiNaclInHand.SetActive(false);
+        tay.gameObject.SetActive(false);
+        OnCompleted?.Invoke();
     }
 
     public void Skip()
@@ -67,5 +51,6 @@ public class RotDungDichNacl : MonoBehaviour
         OnSkipEvent?.Invoke();
         StopAllCoroutines();
         _tweens.ForEach(i => i.Complete());
+        OnCompleted?.Invoke();
     }
 }

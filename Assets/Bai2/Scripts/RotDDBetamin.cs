@@ -12,6 +12,7 @@ public class RotDDBetamin : MonoBehaviour
     public Bat batBatadin;
     [Header("========")]
     public UnityEvent OnSkipEvent;
+    public UnityEvent OnCompleted;
     [Header("========")]
     public GameObject tay;
     public GameObject chaiInHand;
@@ -25,6 +26,7 @@ public class RotDDBetamin : MonoBehaviour
 
     private IEnumerator Anim2()
     {
+        tay.gameObject.SetActive(true);
         var tween = tay.transform.DOLocalMoveX(1.048f, 1);
         _tweens.Add(tween);
         yield return new WaitForSeconds(1);
@@ -36,8 +38,11 @@ public class RotDDBetamin : MonoBehaviour
         _tweens.Add(tween1);
         var tween2 = tay.transform.DORotate(target.eulerAngles, 1);
         _tweens.Add(tween2);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.5f);
         batBatadin.ShowDD(true);
+        chaiInHand.SetActive(false);
+        tay.gameObject.SetActive(false);
+        OnCompleted?.Invoke();
     }
 
     public void Skip()
@@ -45,5 +50,6 @@ public class RotDDBetamin : MonoBehaviour
         OnSkipEvent?.Invoke();
         StopAllCoroutines();
         _tweens.ForEach(i => i.Complete());
+        OnCompleted?.Invoke();
     }
 }

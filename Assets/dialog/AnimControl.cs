@@ -45,7 +45,14 @@ public class AnimControl : MonoBehaviour
         {
             if (caller != null)
             {
-                caller.Play();
+                if (caller.isPaused)
+                {
+                    caller.Resume();
+                }
+                else
+                {
+                    caller.Pause();
+                }
                 iconPause.SetActive(caller.isPaused);
                 iconPlay.SetActive(!caller.isPaused);
             }
