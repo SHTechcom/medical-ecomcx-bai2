@@ -187,11 +187,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1259129196544
-    m_Localized: 'Health insurance card number:'
+    m_Localized: 'HICN:'
     m_Metadata:
       m_Items: []
   - m_Id: 1292557799424
-    m_Localized: 'CCCD:'
+    m_Localized: 'CIN:'
     m_Metadata:
       m_Items: []
   - m_Id: 1313273466880
