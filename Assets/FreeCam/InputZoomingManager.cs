@@ -18,7 +18,7 @@ public class InputZoomingManager : MonoBehaviour
     [SerializeField] Button fixxedBtn;
     //[SerializeField] Transform transformMoveToCamera;
     [SerializeField] Transform transformMoveToPrefabs;
-
+    public CameraController cameraController;
     ZoomingAndRotate zoomingTarget;
 
     [SerializeField] float zoomingDuration = 1f;
@@ -38,6 +38,7 @@ public class InputZoomingManager : MonoBehaviour
 
     private void Update()
     {
+        if (cameraController.type != CameraType.Free) return;
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = _cam.ScreenPointToRay(Input.mousePosition);

@@ -9,7 +9,7 @@ public enum CameraType
 
 public class CameraController : MonoBehaviour
 {
-    private CameraType type;
+    public CameraType type;
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
     public float fastSpeedMultiplier = 3f;

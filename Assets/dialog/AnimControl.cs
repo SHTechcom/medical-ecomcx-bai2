@@ -77,8 +77,8 @@ public class AnimControl : MonoBehaviour
         {
             if (animatorCaller != null)
             {
-                speedSaved -= 0.2f;
-                if (speedSaved < 0) speedSaved = 0.2f;
+                speedSaved += 0.2f;
+                if (speedSaved > 3) speedSaved = 3;
                 animatorCaller.speed = speedSaved;
             }
             caller?.DecreaseSpeed();
