@@ -322,8 +322,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7d1dfc56b0d3fcf45a80dd232d55e4cf, type: 2}
-  - {fileID: 2100000, guid: bcab69f8a0fd1aa428e5a1635059703e, type: 2}
+  - {fileID: 2100000, guid: 1373a879b1bb9ae40a644af181d1b704, type: 2}
+  - {fileID: 2100000, guid: 312429d4be968ea42b708e569cfd06ed, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -400,7 +400,6 @@ GameObject:
   - component: {fileID: 8487501605112093025}
   - component: {fileID: 1067823166008951126}
   - component: {fileID: 3772122263604058701}
-  - component: {fileID: 1222857125763988075}
   m_Layer: 0
   m_Name: Camera_3D_View_RT
   m_TagString: Untagged
@@ -416,13 +415,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 844356796219563394}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.108579636, y: -0, z: -0, w: 0.99408776}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 200, y: -193.5, z: -29.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5747318873416268773}
-  m_LocalEulerAnglesHint: {x: 11.47, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1067823166008951126
 Camera:
   m_ObjectHideFlags: 0
@@ -518,19 +517,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &1222857125763988075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844356796219563394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efc4ca2a99684c90af2644edda6d1a44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 4334465173299272721}
 --- !u!1 &934543245141298228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,8 +1016,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1419,7 +1405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2257592196458648959}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1455,9 +1441,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+        m_TargetAssemblyTypeName: _Main.Phan1.Bai1.StepSystem.ConditionStep, Assembly-CSharp
+        m_MethodName: CompletedStep
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1467,6 +1453,18 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 2257592196458648959}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -2213,7 +2211,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!114 &3786839844347144164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2804,7 +2802,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 0.39370105, y: 0.39370105, z: 0.39370105}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3418814480863003681}
   m_Father: {fileID: 8399928972928914244}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &770373443166679724
@@ -4065,7 +4064,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4ad3100cb7a64b549a0a717d29afda47, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7bce4662db08e5d45a07357ae4ab61db, type: 3}
   m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -4207,12 +4206,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5111844592654283032}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 0.39370102, y: 0.39370102, z: 0.39370102}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2237019861615879882}
+  m_Father: {fileID: 4731878919205877415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &6746621289697598156
 SkinnedMeshRenderer:
@@ -4417,7 +4416,6 @@ Transform:
   - {fileID: 2242340647460117983}
   - {fileID: 7989305705869058483}
   - {fileID: 2514599286211782684}
-  - {fileID: 3418814480863003681}
   - {fileID: 5630180486416637280}
   - {fileID: 693944705503895459}
   - {fileID: 7418690882543439726}

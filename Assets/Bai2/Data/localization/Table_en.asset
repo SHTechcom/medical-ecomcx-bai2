@@ -375,6 +375,10 @@ MonoBehaviour:
     m_Localized: Mask
     m_Metadata:
       m_Items: []
+  - m_Id: 556938827059200
+    m_Localized: Wash your hands and finish the process.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
