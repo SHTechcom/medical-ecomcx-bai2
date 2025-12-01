@@ -53,6 +53,7 @@ MonoBehaviour:
   freeBtn: {fileID: 5286054316746804479}
   fixxedBtn: {fileID: 6476871438186836417}
   transformMoveToPrefabs: {fileID: 2077938642795656046}
+  cameraController: {fileID: 0}
   zoomingDuration: 1
 --- !u!1 &4434770641721244351
 GameObject:
@@ -689,9 +690,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e7fe5dccae6a2047bfd7adb49ce0388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   moveSpeed: 1
   fastSpeedMultiplier: 3
   lookSensitivity: 2
+  minPosition: {x: -10, y: 1, z: -10}
+  maxPosition: {x: 10, y: 10, z: 10}
   target: {fileID: 0}
   distance: 0
   zoomSpeed: 1

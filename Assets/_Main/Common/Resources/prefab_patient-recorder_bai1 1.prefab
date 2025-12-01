@@ -320,7 +320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4610900179466600530, guid: ee564227291a512448a1c9186438cd9c, type: 3}
       propertyPath: m_Name
-      value: prefab_patient-recorder_bai1
+      value: prefab_patient-recorder_bai1 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

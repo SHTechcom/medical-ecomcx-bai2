@@ -262,6 +262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 10295477}
+  isPaused: 0
 --- !u!1001 &18670031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -348,6 +349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 18670035}
+  isPaused: 0
 --- !u!111 &18670035
 Animation:
   m_ObjectHideFlags: 0
@@ -4137,6 +4139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 662227504}
+  isPaused: 0
 --- !u!111 &662227504
 Animation:
   m_ObjectHideFlags: 0
@@ -5658,6 +5661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 975283287}
+  isPaused: 0
 --- !u!1 &976753877
 GameObject:
   m_ObjectHideFlags: 0
@@ -9198,6 +9202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1745728923}
+  isPaused: 0
 --- !u!111 &1745728923
 Animation:
   m_ObjectHideFlags: 0
@@ -9250,6 +9255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1761559899}
+  isPaused: 0
 --- !u!1001 &1775211253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10720,9 +10726,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e7fe5dccae6a2047bfd7adb49ce0388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   moveSpeed: 5
   fastSpeedMultiplier: 3
   lookSensitivity: 2
+  minPosition: {x: -10, y: 1, z: -10}
+  maxPosition: {x: 10, y: 10, z: 10}
   target: {fileID: 0}
   distance: 0
   zoomSpeed: 1

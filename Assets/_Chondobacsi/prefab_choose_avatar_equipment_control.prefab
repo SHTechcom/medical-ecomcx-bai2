@@ -3075,6 +3075,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onCompleteWearClothes:
+    m_PersistentCalls:
+      m_Calls: []
+  colliderPerfects: []
 --- !u!1 &4925987256182676607
 GameObject:
   m_ObjectHideFlags: 0

@@ -226,8 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3867207b628e89b469ef29d4631d2d1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectMaleButton: {fileID: 6860668890014318943}
-  selectFemaleButton: {fileID: 3467982999506429731}
+  select1Button: {fileID: 0}
+  select2Button: {fileID: 0}
 --- !u!1 &5932432521994850526
 GameObject:
   m_ObjectHideFlags: 0
