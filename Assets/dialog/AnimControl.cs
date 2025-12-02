@@ -17,11 +17,11 @@ public class AnimControl : MonoBehaviour
 
     private void Start()
     {
+        speedSaved = 1;
         if (animatorCaller != null)
         {
             if (isPauseed)
             {
-                speedSaved = animatorCaller.speed;
                 isPauseed = false;
                 animatorCaller.speed = 0;
             }
