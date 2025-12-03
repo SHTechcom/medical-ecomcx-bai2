@@ -17,7 +17,7 @@ public class VoiceManager : MonoBehaviour
     private void Start()
     {
         isMale = false;
-        items.ForEach(i => i.Change(isMale));
+        items.ForEach(i => i?.Change(isMale));
         UISetting.SetIconVoice(isMale);
         UISetting.OnClickedVoice(ChangeVoice);
     }
@@ -25,7 +25,7 @@ public class VoiceManager : MonoBehaviour
     public void ChangeVoice()
     {
         isMale = !isMale;
-        items.ForEach(i => i.Change(isMale));
+        items.ForEach(i => i?.Change(isMale));
         UISetting.SetIconVoice(isMale);
     }
 }
