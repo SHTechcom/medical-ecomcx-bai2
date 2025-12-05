@@ -30,16 +30,16 @@ public class AnimControl : MonoBehaviour
                 isPauseed = true;
                 animatorCaller.speed = speedSaved;
             }
-            if (caller != null)
-            {
-                iconPause.SetActive(caller.isPaused);
-                iconPlay.SetActive(!caller.isPaused);
-            }
             if (animatorCaller != null)
             {
                 iconPause.SetActive(animatorCaller.speed == 0);
                 iconPlay.SetActive(animatorCaller.speed != 0);
             }
+        }
+        if (caller != null)
+        {
+            iconPause.SetActive(caller.isPaused);
+            iconPlay.SetActive(!caller.isPaused);
         }
         playBtn.onClick.AddListener(() =>
         {
@@ -58,7 +58,14 @@ public class AnimControl : MonoBehaviour
             }
             if (animatorCaller != null)
             {
-                animatorCaller.speed = speedSaved;
+                if (animatorCaller.speed > 0)
+                {
+                    animatorCaller.speed = 0;
+                }
+                else
+                {
+                    animatorCaller.speed = speedSaved;
+                }
                 iconPause.SetActive(animatorCaller.speed == 0);
                 iconPlay.SetActive(animatorCaller.speed != 0);
             }
@@ -67,8 +74,7 @@ public class AnimControl : MonoBehaviour
         {
             if (animatorCaller != null)
             {
-                speedSaved -= 0.2f;
-                if (speedSaved < 0) speedSaved = 0.2f;
+                speedSaved = 2;
                 animatorCaller.speed = speedSaved;
             }
             caller?.IncreaseSpeed();
@@ -77,8 +83,7 @@ public class AnimControl : MonoBehaviour
         {
             if (animatorCaller != null)
             {
-                speedSaved += 0.2f;
-                if (speedSaved > 3) speedSaved = 3;
+                speedSaved = 0.5f;
                 animatorCaller.speed = speedSaved;
             }
             caller?.DecreaseSpeed();

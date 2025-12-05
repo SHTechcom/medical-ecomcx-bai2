@@ -24,6 +24,8 @@ public class ThaoBangCu : MonoBehaviour
 
     private IEnumerator WaitToTimeInAnim(float targetTime)
     {
+        yield return new WaitUntil(() =>  animator.speed > 0);
+
         AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
 
         // đợi đến khi animator thực sự vào state mới
