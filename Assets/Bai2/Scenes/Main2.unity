@@ -116615,7 +116615,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &701000880
 Transform:
   m_ObjectHideFlags: 0
@@ -303092,6 +303092,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2024787257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1793479288
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2254407038272659094, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: delayToNextStep
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292984454423031926, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1565435
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292984454423031926, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292984454423031926, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.194176
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292984454423031926, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99791855
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292984454423031926, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292984454423031926, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.064487435
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292984454423031926, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292984454423031926, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292984454423031926, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -7.395
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292984454423031926, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084218635791168855, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: maleClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 093b1f9c6351fb943a8251ef516ad6bf, type: 3}
+    - target: {fileID: 8084218635791168855, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: femaleClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 093b1f9c6351fb943a8251ef516ad6bf, type: 3}
+    - target: {fileID: 8484082111404502608, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: m_Name
+      value: base Ve sinh tay (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484082111404502608, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
 --- !u!1 &1793777659
 GameObject:
   m_ObjectHideFlags: 0
@@ -415731,5 +415804,6 @@ SceneRoots:
   - {fileID: 923592391}
   - {fileID: 2520319066873139652}
   - {fileID: 1862346643}
+  - {fileID: 1793479288}
   - {fileID: 111742302}
   - {fileID: 1893487493}

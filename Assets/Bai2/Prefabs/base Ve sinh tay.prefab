@@ -27,12 +27,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093651420931065777}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.16325007, y: 0.7057682, z: -0.1726321, w: 0.66741204}
-  m_LocalPosition: {x: 1.618, y: 1.561, z: -0.159}
+  m_LocalRotation: {x: 0.16051596, y: 0.7161733, z: -0.17517719, w: 0.6562343}
+  m_LocalPosition: {x: -3.2829132, y: 1.561, z: -1.3354018}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3770164955446644366}
+  m_Father: {fileID: 6292984454423031926}
   m_LocalEulerAnglesHint: {x: 27.49, y: 93.2, z: 0}
 --- !u!20 &2778558184367606685
 Camera:
@@ -344,6 +344,7 @@ Transform:
   m_Children:
   - {fileID: 8060471887198714490}
   - {fileID: 1313091177766428028}
+  - {fileID: 4457826055462028984}
   - {fileID: 3770164955446644366}
   - {fileID: 8099529689956375581}
   m_Father: {fileID: 0}
@@ -680,9 +681,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8de95a3b6c517ed488ab08660986f263, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 4457826055462028984}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8de95a3b6c517ed488ab08660986f263, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4954844583684615076}
     m_AddedComponents:
@@ -899,6 +897,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8de95a3b6c517ed488ab08660986f263, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4123170242682249291, guid: 8de95a3b6c517ed488ab08660986f263, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -911,6 +913,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -421353907573753252, guid: 8de95a3b6c517ed488ab08660986f263, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8de95a3b6c517ed488ab08660986f263, type: 3}
       propertyPath: m_Name
       value: Bai01_6buocruatay_Thien (1)
@@ -922,6 +928,22 @@ PrefabInstance:
     - target: {fileID: 5704616759391304492, guid: 8de95a3b6c517ed488ab08660986f263, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275499037402245743, guid: 8de95a3b6c517ed488ab08660986f263, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275499037402245743, guid: 8de95a3b6c517ed488ab08660986f263, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275499037402245743, guid: 8de95a3b6c517ed488ab08660986f263, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275499037402245743, guid: 8de95a3b6c517ed488ab08660986f263, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8216468320564549910, guid: 8de95a3b6c517ed488ab08660986f263, type: 3}
       propertyPath: m_IsActive
@@ -951,6 +973,10 @@ PrefabInstance:
     - target: {fileID: 2511168978893255283, guid: a410b0465e3469b4db5d95be6eb4a926, type: 3}
       propertyPath: m_Name
       value: Launcher Water VFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511168978893255283, guid: a410b0465e3469b4db5d95be6eb4a926, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7572507314930481017, guid: a410b0465e3469b4db5d95be6eb4a926, type: 3}
       propertyPath: m_LocalPosition.x
