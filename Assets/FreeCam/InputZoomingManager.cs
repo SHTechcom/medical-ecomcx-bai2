@@ -1,9 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using DG.Tweening;
+using Frank;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InputZoomingManager : MonoBehaviour
+public class InputZoomingManager : Singleton<InputZoomingManager>
 {
     Vector3 lastPos;
     Quaternion lastRot;
@@ -20,7 +23,8 @@ public class InputZoomingManager : MonoBehaviour
     ZoomingAndRotate zoomingTarget;
 
     [SerializeField] float zoomingDuration = 1f;
-
+    public List<GameObject> hands = new List<GameObject>();
+    private List<GameObject> handOpeneds = new List<GameObject>();
     private void Start()
     {
         cameraController.type = CameraType.Lock;
@@ -102,6 +106,14 @@ public class InputZoomingManager : MonoBehaviour
 
     public void StartFreeMode()
     {
+        hands.ForEach(i =>
+        {
+            if (i.gameObject.activeSelf)
+            {
+                handOpeneds.Add(i);
+            }
+            i.SetActive(false);
+        });
         cameraController.type = CameraType.Free;
         var canvases = FindObjectsOfType<Canvas>(true);
         foreach (var c in canvases)
@@ -120,6 +132,7 @@ public class InputZoomingManager : MonoBehaviour
 
     public void StopMode()
     {
+        handOpeneds.ForEach(i => i.SetActive(true));
         cameraController.type = CameraType.Lock;
         openedCanvasCached.ForEach(i => i.gameObject.SetActive(true));
         openedCanvasCached.Clear();

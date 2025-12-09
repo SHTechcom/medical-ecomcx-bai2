@@ -42,6 +42,7 @@ namespace _Main.Phan1.Bai1.StepSystem
 
         public override void StartStep()
         {
+            InputZoomingManager.Instance.Show();
             if(gameObject == null)
             {
                 CompletedStep();
