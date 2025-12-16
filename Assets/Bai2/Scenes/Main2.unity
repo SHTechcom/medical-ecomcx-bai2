@@ -583,7 +583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2129837}
   - component: {fileID: 2129838}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11816,7 +11816,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 72767865}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29368,6 +29368,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -46.087463
       objectReference: {fileID: 0}
+    - target: {fileID: -8223730662266480018, guid: 12615280d2e275e4494d62065e9f74f4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -8070609683010032596, guid: 12615280d2e275e4494d62065e9f74f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
@@ -30440,6 +30444,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.0000000126133095
       objectReference: {fileID: 0}
+    - target: {fileID: -2791768740719502577, guid: 12615280d2e275e4494d62065e9f74f4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -2744229841399471797, guid: 12615280d2e275e4494d62065e9f74f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0.4203928
@@ -30695,6 +30703,10 @@ PrefabInstance:
     - target: {fileID: -1329659902649511817, guid: 12615280d2e275e4494d62065e9f74f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.00048828122
+      objectReference: {fileID: 0}
+    - target: {fileID: -1326644299083050439, guid: 12615280d2e275e4494d62065e9f74f4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -1326644299083050439, guid: 12615280d2e275e4494d62065e9f74f4, type: 3}
       propertyPath: m_IsActive
@@ -46107,7 +46119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 256516229}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong
   m_TagString: Hand
   m_Icon: {fileID: 0}
@@ -47137,19 +47149,7 @@ MonoBehaviour:
   conditionCount: 0
   onStepStarted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 630220778}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onStepEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -55718,7 +55718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 320601241}
   - component: {fileID: 320601242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55838,7 +55838,7 @@ GameObject:
   m_Component:
   - component: {fileID: 321574097}
   - component: {fileID: 321574098}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84204,7 +84204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 488617744}
   - component: {fileID: 488617745}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106272,19 +106272,7 @@ MonoBehaviour:
   conditionCount: 1
   onStepStarted:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 451713854}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onStepEnded:
     m_PersistentCalls:
       m_Calls: []
@@ -111761,7 +111749,7 @@ GameObject:
   m_Component:
   - component: {fileID: 665918065}
   - component: {fileID: 665918066}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128601,7 +128589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 769627715}
   - component: {fileID: 769627716}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139660,7 +139648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 842808272}
   - component: {fileID: 842808273}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153920,9 +153908,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSources:
+  - {fileID: 2013946559}
   - {fileID: 391694632}
   - {fileID: 461526293}
   - {fileID: 473577508}
+  - {fileID: 1118394214}
   - {fileID: 1182233651}
   - {fileID: 1286855109}
   - {fileID: 1346873634}
@@ -153930,11 +153920,11 @@ MonoBehaviour:
   - {fileID: 1620984223}
   - {fileID: 1630123721}
   - {fileID: 1645981567}
-  - {fileID: 0}
+  - {fileID: 1715946890}
   - {fileID: 1777137847}
   - {fileID: 1874497287}
   - {fileID: 1975052795}
-  - {fileID: 0}
+  - {fileID: 2120446598}
 --- !u!1 &923734613
 GameObject:
   m_ObjectHideFlags: 0
@@ -154495,7 +154485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoEnableWhenStartStep: 1
   autoDisableWhenEndStep: 1
-  delayToNextStep: 2
+  delayToNextStep: 4
   conditionCount: 1
   onStepStarted:
     m_PersistentCalls:
@@ -155095,7 +155085,7 @@ GameObject:
   m_Component:
   - component: {fileID: 928866149}
   - component: {fileID: 928866150}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164827,7 +164817,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 985585517}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong
   m_TagString: Hand
   m_Icon: {fileID: 0}
@@ -186314,6 +186304,22 @@ Transform:
   - {fileID: 1184756581}
   m_Father: {fileID: 1405278474}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1118394214 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3573727920673672738, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+  m_PrefabInstance: {fileID: 32855379}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1118394215 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5480996139411048702, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+  m_PrefabInstance: {fileID: 32855379}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05af087a9b900549876978617a44c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1119257554
 GameObject:
   m_ObjectHideFlags: 0
@@ -253031,7 +253037,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1506548301}
   - component: {fileID: 1506548302}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264860,7 +264866,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1577591937}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288263,6 +288269,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1510040493}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1715946890 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3573727920673672738, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+  m_PrefabInstance: {fileID: 1290258129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1715946891 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5480996139411048702, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+  m_PrefabInstance: {fileID: 1290258129}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05af087a9b900549876978617a44c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1716239420
 GameObject:
   m_ObjectHideFlags: 0
@@ -297150,9 +297172,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8223730662266480018, guid: 1b3ea24905399114498d3858333c1d55, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -2791768740719502577, guid: 1b3ea24905399114498d3858333c1d55, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -2791768740719502577, guid: 1b3ea24905399114498d3858333c1d55, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1326644299083050439, guid: 1b3ea24905399114498d3858333c1d55, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -1326644299083050439, guid: 1b3ea24905399114498d3858333c1d55, type: 3}
       propertyPath: m_IsActive
@@ -305895,7 +305929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1811747907}
   - component: {fileID: 1811747908}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307611,10 +307645,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8223730662266480018, guid: 00dc41e0b49743c4d99f7ad84e9f5837, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -2791768740719502577, guid: 00dc41e0b49743c4d99f7ad84e9f5837, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -2366930843435164809, guid: 00dc41e0b49743c4d99f7ad84e9f5837, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: f00c24899f24345458320626fb2a7238, type: 2}
+    - target: {fileID: -1326644299083050439, guid: 00dc41e0b49743c4d99f7ad84e9f5837, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -1326644299083050439, guid: 00dc41e0b49743c4d99f7ad84e9f5837, type: 3}
       propertyPath: m_TagString
       value: Hand
@@ -308874,7 +308920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1825006432}
   - component: {fileID: 1825006433}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309259,7 +309305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1826988208}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330455,7 +330501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1960715396}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336870,12 +336916,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMale: 0
   items:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2013946558}
   - {fileID: 391694633}
   - {fileID: 461526294}
   - {fileID: 473577509}
+  - {fileID: 1118394215}
   - {fileID: 1182233654}
   - {fileID: 1286855110}
   - {fileID: 1346873635}
@@ -336883,9 +336928,11 @@ MonoBehaviour:
   - {fileID: 1620984224}
   - {fileID: 1630123723}
   - {fileID: 1645981568}
+  - {fileID: 1715946891}
   - {fileID: 1777137848}
   - {fileID: 1874497288}
   - {fileID: 1975052794}
+  - {fileID: 2120446599}
 --- !u!4 &1999875774
 Transform:
   m_ObjectHideFlags: 0
@@ -338638,6 +338685,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8223730662266480018, guid: 1b3ea24905399114498d3858333c1d55, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -2791768740719502577, guid: 1b3ea24905399114498d3858333c1d55, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1326644299083050439, guid: 1b3ea24905399114498d3858333c1d55, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -1326644299083050439, guid: 1b3ea24905399114498d3858333c1d55, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -339419,6 +339478,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8223730662266480018, guid: f9d32221e9756d548bed192f6c3820c0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -7431717737283952460, guid: f9d32221e9756d548bed192f6c3820c0, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -339426,6 +339489,14 @@ PrefabInstance:
     - target: {fileID: -5360113005895699995, guid: f9d32221e9756d548bed192f6c3820c0, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2791768740719502577, guid: f9d32221e9756d548bed192f6c3820c0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -1326644299083050439, guid: f9d32221e9756d548bed192f6c3820c0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -1326644299083050439, guid: f9d32221e9756d548bed192f6c3820c0, type: 3}
       propertyPath: m_IsActive
@@ -339699,13 +339770,130 @@ PrefabInstance:
     - {fileID: 5951440701257626232, guid: 1f024a035975f504d96a3ded4200b265, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6826465713260582429, guid: 1f024a035975f504d96a3ded4200b265, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2013946559}
+    - targetCorrespondingSourceObject: {fileID: 6826465713260582429, guid: 1f024a035975f504d96a3ded4200b265, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2013946558}
   m_SourcePrefab: {fileID: 100100000, guid: 1f024a035975f504d96a3ded4200b265, type: 3}
 --- !u!4 &2013946556 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7313824006272666851, guid: 1f024a035975f504d96a3ded4200b265, type: 3}
   m_PrefabInstance: {fileID: 2013946555}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2013946558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413518218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05af087a9b900549876978617a44c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maleClip: {fileID: 8300000, guid: aeb40ff14e5e2014faf5bb257b3c44eb, type: 3}
+  femaleClip: {fileID: 8300000, guid: e8a9335b4dc798544a5f097d317a7305, type: 3}
+--- !u!82 &2013946559
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413518218}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: e8a9335b4dc798544a5f097d317a7305, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2014093571
 GameObject:
   m_ObjectHideFlags: 0
@@ -355297,7 +355485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2110680550}
   - component: {fileID: 2110680551}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357500,6 +357688,22 @@ Transform:
   - {fileID: 135961701}
   m_Father: {fileID: 675117167}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2120446598 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3573727920673672738, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+  m_PrefabInstance: {fileID: 1793479288}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2120446599 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5480996139411048702, guid: 78e0cf183c7ace84281120e604fee995, type: 3}
+  m_PrefabInstance: {fileID: 1793479288}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05af087a9b900549876978617a44c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2120949062
 GameObject:
   m_ObjectHideFlags: 0
@@ -365922,7 +366126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5931869908738444879}
   - component: {fileID: 2279954517361325404}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369954,6 +370158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Input Zoom
       objectReference: {fileID: 0}
+    - target: {fileID: 3673275400415750561, guid: 2b70c9bdd8bd319409ed551ca4d39bc8, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1001
+      objectReference: {fileID: 0}
     - target: {fileID: 3708031375560109974, guid: 2b70c9bdd8bd319409ed551ca4d39bc8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -370085,6 +370293,10 @@ PrefabInstance:
     - target: {fileID: 7209984187570017818, guid: 2b70c9bdd8bd319409ed551ca4d39bc8, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8237143715006727495, guid: 2b70c9bdd8bd319409ed551ca4d39bc8, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 55
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -379802,7 +380014,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1271977135947070939}
   - component: {fileID: 335713997221559423}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383349,7 +383561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3644702687560293290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Taydieuduong_rig:Taydieuduong:Taydieuduong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
