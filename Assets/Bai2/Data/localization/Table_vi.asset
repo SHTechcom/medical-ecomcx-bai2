@@ -392,6 +392,10 @@ MonoBehaviour:
     m_Localized: "V\u1EC7 sinh tay, k\u1EBFt th\xFAc qu\xE1 tr\xECnh"
     m_Metadata:
       m_Items: []
+  - m_Id: 8626886086414336
+    m_Localized: "V\u1EC7 sinh tay"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

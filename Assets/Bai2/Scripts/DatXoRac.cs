@@ -14,10 +14,10 @@ public class DatXoRac : MonoBehaviour
     public void Play()
     {
         poseTayCamXoRac.gameObject.SetActive(true);
-        tween = poseTayCamXoRac.transform.DOMove(target.position, 1).OnComplete(() =>
+        tween = poseTayCamXoRac.transform.DOMove(target.position, 2.5f).OnComplete(() =>
         {
-            xorac.SetActive(true);
-            poseTayCamXoRac.SetActive(false);
+            //xorac.SetActive(true);
+            //poseTayCamXoRac.SetActive(false);
             OnCompletedEvent?.Invoke();
         });
     }

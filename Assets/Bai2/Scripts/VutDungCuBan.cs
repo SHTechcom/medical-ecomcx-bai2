@@ -10,7 +10,7 @@ public class VutDungCuBan : MonoBehaviour
 
     public void Play()
     {
-        bang.DOLocalMove(target, 1).OnComplete(() =>
+        bang.DOLocalMove(target, 2.5f).OnComplete(() =>
         {
             OnCompleted?.Invoke();
         });

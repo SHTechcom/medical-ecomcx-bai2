@@ -379,6 +379,10 @@ MonoBehaviour:
     m_Localized: Wash your hands and finish the process.
     m_Metadata:
       m_Items: []
+  - m_Id: 8626886086414336
+    m_Localized: Clean hands
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
