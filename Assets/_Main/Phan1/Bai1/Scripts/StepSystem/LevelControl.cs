@@ -15,19 +15,11 @@ namespace _Main.Phan1.Bai1.StepSystem
 
         private Tween _tween;
 
-        private void OnEnable()
-        {
-            foreach (var step in stepList)
-            {
-                step.OnEndStep += NextStep;
-            }
-        }
-
         private void OnDisable()
         {
-            foreach (var step in stepList)
+            if (CurrentStepIndex >= 0 && CurrentStepIndex < stepList.Count)
             {
-                step.OnEndStep -= NextStep;
+                stepList[CurrentStepIndex].OnEndStep -= NextStep;
             }
         }
 
@@ -44,11 +36,14 @@ namespace _Main.Phan1.Bai1.StepSystem
         public virtual void StartLevel()
         {
             CurrentStepIndex = 0;
+            SubscribeCurrentStep();
             stepList[CurrentStepIndex].StartStep();
         }
 
         public virtual void NextStep()
         {
+            UnsubscribeCurrentStep();
+
             if (CurrentStepIndex == stepList.Count - 1)
             {
                 EndLevel();
@@ -56,7 +51,24 @@ namespace _Main.Phan1.Bai1.StepSystem
             }
 
             CurrentStepIndex++;
+            SubscribeCurrentStep();
             stepList[CurrentStepIndex].StartStep();
+        }
+
+        private void SubscribeCurrentStep()
+        {
+            if (CurrentStepIndex >= 0 && CurrentStepIndex < stepList.Count)
+            {
+                stepList[CurrentStepIndex].OnEndStep += NextStep;
+            }
+        }
+
+        private void UnsubscribeCurrentStep()
+        {
+            if (CurrentStepIndex >= 0 && CurrentStepIndex < stepList.Count)
+            {
+                stepList[CurrentStepIndex].OnEndStep -= NextStep;
+            }
         }
 
         public virtual void EndLevel()

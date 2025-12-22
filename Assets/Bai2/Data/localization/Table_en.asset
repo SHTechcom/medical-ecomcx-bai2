@@ -383,6 +383,10 @@ MonoBehaviour:
     m_Localized: Clean hands
     m_Metadata:
       m_Items: []
+  - m_Id: 9393388003708928
+    m_Localized: The nurse changed the patient's bandage
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
